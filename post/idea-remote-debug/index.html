@@ -1,10 +1,10 @@
-<html lang="zh">
+<html>
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>关于 - UnitTest</title>
+<title>Idea远程调试spring boot项目 | UnitTest</title>
 
 <link rel="shortcut icon" href="https://ko1265.github.io/favicon.ico?v=1611818102026">
 
@@ -25,7 +25,7 @@
 
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
 <body>
 <div class="main gt-bg-theme-color-first">
@@ -94,14 +94,46 @@
 </nav>
 
     <div class="post-container">
-        <div class="post-detail">
+        <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
-                <div class="post-content">
+                <h2 class="post-title">
+                    Idea远程调试spring boot项目
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-01-28 ·
+                    </time>
                     
+                        <a href="https://ko1265.github.io/tag/jbhlKPncP/" class="post-tags">
+                            # JAVA
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="1-idea配置">1. idea配置</h2>
+<p>配置Run/Debug Configurations，选择Remote JVM Debug；Host填写远程ip，Port填写端口；<img src="https://ko1265.github.io/post-images/1611817559563.png" alt="" loading="lazy"></p>
+<h2 id="2-在远端加一个shell命令文件">2. 在远端加一个shell命令文件</h2>
+<p>debug.sh里写:<br>
+<code>java -Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y -jar 包名.jar</code></p>
+<h2 id="3-开始调试">3. 开始调试</h2>
+<p>一、远端运行debug.sh；<br>
+二、idea点调试；<img src="https://ko1265.github.io/post-images/1611817852579.png" alt="" loading="lazy"></p>
+
                 </div>
             </article>
         </div>
-        <br>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://ko1265.github.io/post/hello/" class="post-title gt-a-link">
+                    Hello Amigo
+                </a>
+            </div>
+        
+
+        
+
         
             
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
@@ -148,11 +180,11 @@
 </script>
 
             
+
             
         
 
         
-
 
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">Talk is cheap, show...</div>

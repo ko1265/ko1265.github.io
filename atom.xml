@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ko1265.github.io</id>
     <title>UnitTest</title>
-    <updated>2021-01-27T04:55:08.545Z</updated>
+    <updated>2021-01-28T07:15:13.727Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ko1265.github.io"/>
     <link rel="self" href="https://ko1265.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://ko1265.github.io/images/avatar.png</logo>
     <icon>https://ko1265.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, UnitTest</rights>
+    <entry>
+        <title type="html"><![CDATA[Idea远程调试spring boot项目]]></title>
+        <id>https://ko1265.github.io/post/idea-remote-debug/</id>
+        <link href="https://ko1265.github.io/post/idea-remote-debug/">
+        </link>
+        <updated>2021-01-28T06:57:14.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1-idea配置">1. idea配置</h2>
+<p>配置Run/Debug Configurations，选择Remote JVM Debug；Host填写远程ip，Port填写端口；<img src="https://ko1265.github.io/post-images/1611817559563.png" alt="" loading="lazy"></p>
+<h2 id="2-在远端加一个shell命令文件">2. 在远端加一个shell命令文件</h2>
+<p>debug.sh里写:<br>
+<code>java -Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y -jar 包名.jar</code></p>
+<h2 id="3-开始调试">3. 开始调试</h2>
+<p>一、远端运行debug.sh；<br>
+二、idea点调试；<img src="https://ko1265.github.io/post-images/1611817852579.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Amigo]]></title>
         <id>https://ko1265.github.io/post/hello/</id>
