@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Hello Amigo | UnitTest</title>
+<title>js树数组遍历 | UnitTest</title>
 
 <link rel="shortcut icon" href="https://ko1265.github.io/favicon.ico?v=1652750575984">
 
@@ -97,27 +97,46 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    Hello Amigo
+                    js树数组遍历
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2021-01-26 ·
+                        · 2022-05-17 ·
                     </time>
-                    
-                        <a href="https://ko1265.github.io/tag/u2hg11e7i/" class="post-tags">
-                            # Gridea
-                        </a>
                     
                 </div>
                 <div class="post-content">
-                    <p>hello android；<br>
-hello node.js；<br>
-hello ios；</p>
+                    <pre><code class="language-javascript">treeTraverse(arrayTree, value) {
+    let res = ''
+    for(let item of arrayTree) {
+        if(item.orgCode == value) {
+            // 要做的事的逻辑代码
+            break
+        } else {
+            if(item.children&amp;&amp;item.children.length&gt;0) {
+                let node = this.treeTraverse(item.children, value)
+                if(node) {
+                    return node //(1)
+                }
+            }
+        }
+    }
+    return res
+}
+</code></pre>
+<p>(1)递归调用函数时返回的object通过打印有值，但是在获取的时候是undefined，原因是在递归函数内部没有对递归函数进行return，否则外层函数无法接收到返回值</p>
 
                 </div>
             </article>
         </div>
 
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://ko1265.github.io/post/antdv-xiang-mu-zhong-cha-cao-slot-he-scopedslots-shi-yong-li-zi/" class="post-title gt-a-link">
+                    antdv项目中插槽slot和scopedSlots使用例子
+                </a>
+            </div>
         
 
         

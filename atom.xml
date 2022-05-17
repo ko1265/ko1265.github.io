@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ko1265.github.io</id>
     <title>UnitTest</title>
-    <updated>2022-05-17T01:19:36.353Z</updated>
+    <updated>2022-05-17T01:22:59.610Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ko1265.github.io"/>
     <link rel="self" href="https://ko1265.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2022, UnitTest</rights>
     <entry>
         <title type="html"><![CDATA[js树数组遍历]]></title>
-        <id>https://ko1265.github.io/post/js-shu-shu-zu-bian-li/</id>
-        <link href="https://ko1265.github.io/post/js-shu-shu-zu-bian-li/">
+        <id>https://ko1265.github.io/post/jstraverse/</id>
+        <link href="https://ko1265.github.io/post/jstraverse/">
         </link>
         <updated>2022-05-17T00:51:55.000Z</updated>
         <content type="html"><![CDATA[<pre><code class="language-javascript">treeTraverse(arrayTree, value) {
