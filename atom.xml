@@ -2,14 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ko1265.github.io</id>
     <title>UnitTest</title>
-    <updated>2021-05-18T06:54:12.070Z</updated>
+    <updated>2022-05-17T00:57:35.540Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ko1265.github.io"/>
     <link rel="self" href="https://ko1265.github.io/atom.xml"/>
     <subtitle>Talk is cheap, show...</subtitle>
     <logo>https://ko1265.github.io/images/avatar.png</logo>
     <icon>https://ko1265.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, UnitTest</rights>
+    <rights>All rights reserved 2022, UnitTest</rights>
+    <entry>
+        <title type="html"><![CDATA[js树数组遍历]]></title>
+        <id>https://ko1265.github.io/post/js-shu-shu-zu-bian-li/</id>
+        <link href="https://ko1265.github.io/post/js-shu-shu-zu-bian-li/">
+        </link>
+        <updated>2022-05-17T00:51:55.000Z</updated>
+        <content type="html"><![CDATA[<pre><code class="language-javascript">treeTraverse(arrayTree, value) {
+    let res = ''
+    for(let item of arrayTree) {
+        if(item.orgCode == value) {
+            // 要做的事的逻辑代码
+            break
+        } else {
+            if(item.children&amp;&amp;item.children.length&gt;0) {
+                let node = this.treeTraverse(item.children, value)
+                if(node) {
+                    return node //(1)
+                }
+            }
+        }
+    }
+    return res
+}
+</code></pre>
+<p>(1)递归调用函数时返回的object通过打印有值，但是在获取的时候是undefined，原因是在递归函数内部没有对递归函数进行return，否则外层函数无法接收到返回值</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[antdv项目中插槽slot和scopedSlots使用例子]]></title>
         <id>https://ko1265.github.io/post/antdv-xiang-mu-zhong-cha-cao-slot-he-scopedslots-shi-yong-li-zi/</id>
